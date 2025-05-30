@@ -1,9 +1,7 @@
-package metaClasses
+package mop
 
 import oop.User
 import org.codehaus.groovy.runtime.DefaultGroovyMethods
-
-import java.lang.reflect.Method
 
 class MopRunner {
 
