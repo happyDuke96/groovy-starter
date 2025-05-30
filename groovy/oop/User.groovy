@@ -14,4 +14,13 @@ class User implements WithId {
     def getAt(Integer index) {
         index == 0 ? firstName : lastName
     }
+
+    def methodMissing(String name/* method name*/, Object arguments) {
+        println "invoke missing method $name with args: $arguments"
+    }
+
+    def propertyMissing(String name/* property name*/) {
+        println "print missing property $name"
+        "default property"
+    }
 }
